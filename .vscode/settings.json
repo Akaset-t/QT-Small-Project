@@ -1,0 +1,9 @@
+{
+    "qttools.searchMode": "path",
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+        "qwidget": "cpp",
+        "qstack": "cpp",
+        "qdebug": "cpp"
+    }
+}

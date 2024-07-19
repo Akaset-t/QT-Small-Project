@@ -1,0 +1,122 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "mkdir",
+            "type": "shell",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "command": "mkdir",
+            "args": [
+                "-Force",
+                "build"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "qmake-debug",
+            "type": "shell",
+            "options": {
+                "cwd": "${fileDirname}/build"
+            },
+            "command": "qmake",
+            "args": [
+                "../${relativeFileDirname}.pro",
+                "-spec",
+                "win32-g++",
+                "\"CONFIG+=debug\"",
+                "\"CONFIG+=console\""
+            ],
+            "dependsOn": []
+        },
+        {
+            "label": "make-debug",
+            "type": "shell",
+            "options": {
+                "cwd": "${fileDirname}/build"
+            },
+            "command": "D:\\Software\\Qt\\Tools\\mingw730_64\\bin\\mingw32-make.exe",
+            "args": [
+                "-f",
+                "Makefile.Debug",
+                "-j7"
+            ],
+            "dependsOn": [
+                "qmake-debug"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "run-debug",
+            "type": "process",
+            "options": {
+                "cwd": "${fileDirname}/build/debug"
+            },
+            "command": "${relativeFileDirname}.exe",
+            "dependsOn": [
+                "make-debug"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "qmake-release",
+            "type": "shell",
+            "options": {
+                "cwd": "${fileDirname}/build"
+            },
+            "command": "qmake",
+            "args": [
+                "../${relativeFileDirname}.pro",
+                "-spec",
+                "win32-g++",
+                "\"CONFIG+=qtquickcompiler\""
+            ],
+            "dependsOn": []
+        },
+        {
+            "label": "make-release",
+            "type": "shell",
+            "options": {
+                "cwd": "${fileDirname}/build"
+            },
+            "command": "D:\\Software\\Qt\\Tools\\mingw730_64\\bin\\mingw32-make.exe",
+            "args": [
+                "-f",
+                "Makefile.Release",
+                "-j7"
+            ],
+            "dependsOn": [
+                "qmake-release"
+            ]
+        },
+        {
+            "label": "run-release",
+            "type": "process",
+            "options": {
+                "cwd": "${fileDirname}/build/release"
+            },
+            "command": "${relativeFileDirname}.exe",
+            "dependsOn": [
+                "make-release"
+            ]
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "options": {
+                "cwd": "${fileDirname}/build"
+            },
+            "command": "D:\\Software\\Qt\\Tools\\mingw730_64\\bin\\mingw32-make.exe",
+            "args": [
+                "clean"
+            ]
+        }
+    ]
+}
