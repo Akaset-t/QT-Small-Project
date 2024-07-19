@@ -1,9 +1,9 @@
 {
     "configurations": [
         {
-            "name": "calculater",
+            "name": "calculator",
             "includePath": [
-                "${workspaceFolder}/calculater/**",
+                "${workspaceFolder}/calculator/**",
                 "D:/Software/Qt/5.12.5/mingw73_64/include/**"
             ],
             "defines": [
