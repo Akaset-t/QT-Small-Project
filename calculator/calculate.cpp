@@ -74,7 +74,7 @@ QVector<QVariant> infixToPostfix(const QString &expression) {
     return postfixExpression;
 }
 
-double Calculate::calculate(const QString &expression) {
+double Calculator::calculate(const QString &expression) {
     QVector<QVariant> postfixExpression = infixToPostfix(expression);
     QStack<double> numStack;
 

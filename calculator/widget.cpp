@@ -164,5 +164,5 @@ void Widget::on_del_clicked()
 void Widget::on_pushButton_eq_clicked()
 {
     expression = ui->lineEdit->text();
-    ui->lineEdit->setText(QString::number(Calculate::calculate(expression)));
+    ui->lineEdit->setText(QString::number(Calculator::calculate(expression)));
 }

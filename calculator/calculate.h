@@ -4,7 +4,7 @@
 #include <QString>
 
 
-class Calculate {
+class Calculator {
 public:
     // 目前只能计算正整数,且不支持不合法的表达式
     static double calculate(const QString& expression);
