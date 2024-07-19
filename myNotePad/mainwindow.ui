@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="newFile"/>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+    <addaction name="saveAsFile"/>
+   </widget>
+   <addaction name="menu_F"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="newFile">
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+  </action>
+  <action name="openFile">
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+  </action>
+  <action name="saveAsFile">
+   <property name="text">
+    <string>另存为(&amp;A)</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -58,6 +58,9 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "qpixmap": "cpp",
-        "qimage": "cpp"
+        "qimage": "cpp",
+        "qaction": "cpp",
+        "qcoreapplication": "cpp",
+        "qfile": "cpp"
     }
 }
