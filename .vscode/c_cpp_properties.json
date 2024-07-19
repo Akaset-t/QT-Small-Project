@@ -29,6 +29,20 @@
             "intelliSenseMode": "windows-gcc-x64"
         },
         {
+            "name": "QTimer",
+            "includePath": [
+                "${workspaceFolder}/QTimer/**",
+                "D:/Software/Qt/5.12.5/mingw73_64/include/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:/Software/Qt/Tools/mingw730_64/bin/g++.exe",
+            "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",

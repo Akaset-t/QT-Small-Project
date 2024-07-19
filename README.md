@@ -7,3 +7,4 @@
 
 ## 2、图片轮播
 [基于QObject的定时器](QObjectTimer/)
+[基于QTimer的定时器](QTimer/)
