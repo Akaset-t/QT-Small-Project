@@ -61,6 +61,7 @@
         "qimage": "cpp",
         "qaction": "cpp",
         "qcoreapplication": "cpp",
-        "qfile": "cpp"
+        "qfile": "cpp",
+        "qtcpserver": "cpp"
     }
 }
