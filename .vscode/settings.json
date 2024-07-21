@@ -62,6 +62,7 @@
         "qaction": "cpp",
         "qcoreapplication": "cpp",
         "qfile": "cpp",
-        "qtcpserver": "cpp"
+        "qtcpserver": "cpp",
+        "qtsql": "cpp"
     }
 }
